@@ -12,8 +12,9 @@ conexion.connect((error) => {
     if(error){
         throw error;
     }
-    console.log('Conexion exitosa');
+    console.log('Conexion  a la base de datos exitosa');
 });
+
 
 // const qy = util.promisify(conexion.query).bind(conexion);
 conexion.query = util.promisify(conexion.query).bind(conexion); 
